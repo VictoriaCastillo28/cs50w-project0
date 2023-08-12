@@ -1,0 +1,89 @@
+/* Definir variables */
+$primary-color: #FFC0CB;
+$secondary-color: #f37ab6;
+$link-color: #333;
+$link-color-hover: #ff6600;
+
+/* Estilos generales */
+html {
+  height: 100%;
+}
+
+body {
+  font-style: unset;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Encabezado */
+header {
+  background-color: $primary-color;
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline;
+      margin-right: 20px;
+
+      a {
+        text-decoration: none;
+        color: $link-color;
+        font-weight: bold;
+
+        &:hover {
+          color: $link-color-hover;
+        }
+      }
+    }
+  }
+}
+
+/* Banner */
+.banner {
+  img {
+    width: 100%;
+  }
+}
+
+/* Estilos para agrandar y centrar la imagen */
+.imagen-bienvenida {
+  display: block; /* Convertir la imagen en un elemento de bloque */
+  margin: 0 auto; /* Centrar horizontalmente */
+  max-width: 100%; /* Limitar el ancho máximo a su contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+}
+
+.imagen-producto {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.producto {
+  img {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: $secondary-color;
+  color: #fff;
+}
